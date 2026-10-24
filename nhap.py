@@ -48,8 +48,8 @@ with tab2:
     st.write("Mô tả: Ghi lại chuyến đi thực địa, phỏng vấn nghệ nhân và trải nghiệm của học sinh.")
 
     # --- KHU VỰC VIDEO PHỎNG VẤN ---
-    st.subheader("🎬 Phỏng vấn Nghệ nhân")
-    st.video("https://www.youtube.com/watch?v=dQw4w9WgXcQ")
+    st.subheader("🎬 Giới thiệu về hát then đàn tính")
+    st.video("https://youtu.be/lUofhKpwe3w")
 
     st.divider()
 
