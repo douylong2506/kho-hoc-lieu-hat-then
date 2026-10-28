@@ -7,15 +7,27 @@ st.set_page_config(
     layout="wide"
 )
 
-# Tăng cỡ chữ cho dễ nhìn
+# Tăng cỡ chữ tiêu đề và phụ đề cho trang web
 st.markdown("""
     <style>
-    html, body, [class*="st-"] { font-size: 18px !important; }
-    button[data-baseweb="tab"] p { font-size: 18px !important; font-weight: bold !important; }
+    /* Tăng kích thước Tiêu đề chính (st.title) */
+    h1 {
+        font-size: 45px !important;
+    }
 
-    /* Thêm 2 dòng này để chỉnh to tiêu đề và phụ đề */
-    h1 { font-size: 38px !important; }
-    p { font-size: 20px !important; }
+    /* Tăng kích thước Phụ đề / Caption (st.caption) */
+    [data-testid="stCaptionContainer"] p {
+        font-size: 22px !important;
+    }
+
+    /* Tăng cỡ chữ chung cho toàn trang và các tab */
+    html, body, [class*="st-"] { 
+        font-size: 18px !important; 
+    }
+    button[data-baseweb="tab"] p { 
+        font-size: 18px !important; 
+        font-weight: bold !important; 
+    }
     </style>
     """, unsafe_allow_html=True)
 
@@ -87,7 +99,7 @@ with tab2:
         st.write("🎬 **5 Video:**")
         v1, v2 = st.columns(2)
         with v1:
-            st.video(LINK_YOUTUBE_MAU)
+            st.video("https://youtu.be/lUofhKpwe3w")
             st.video(LINK_YOUTUBE_MAU)
             st.video(LINK_YOUTUBE_MAU)
         with v2:
