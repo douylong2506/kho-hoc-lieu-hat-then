@@ -12,6 +12,8 @@ st.markdown("""
     <style>
     html, body, [class*="st-"] { font-size: 18px !important; }
     button[data-baseweb="tab"] p { font-size: 18px !important; font-weight: bold !important; }
+    h1 { font-size: 38px !important; }
+    p { font-size: 20px !important; }
     </style>
     """, unsafe_allow_html=True)
 
