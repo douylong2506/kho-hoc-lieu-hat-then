@@ -12,6 +12,8 @@ st.markdown("""
     <style>
     html, body, [class*="st-"] { font-size: 18px !important; }
     button[data-baseweb="tab"] p { font-size: 18px !important; font-weight: bold !important; }
+
+    /* Thêm 2 dòng này để chỉnh to tiêu đề và phụ đề */
     h1 { font-size: 38px !important; }
     p { font-size: 20px !important; }
     </style>
