@@ -10,23 +10,21 @@ st.set_page_config(
 # Tăng cỡ chữ tiêu đề và phụ đề cho trang web
 st.markdown("""
     <style>
-    /* Ép tiêu đề chính (st.title) to rõ */
+    /* 1. Tiêu đề chính (st.title) to rõ nhất */
     h1 {
-        font-size: 45px !important;
+        font-size: 38px !important;
         font-weight: bold !important;
     }
 
-    /* Ép phụ đề (st.caption) to rõ */
+    /* 2. Phần mô tả/phụ đề (st.caption) nhỏ hơn tiêu đề một chút cho cân đối */
     [data-testid="stCaptionContainer"] p {
-        font-size: 24px !important;
+        font-size: 18px !important;
+        color: #b0b0b0 !important;
     }
 
-    /* Cỡ chữ chung cho các nội dung khác và Tab */
-    html, body, [class*="st-"] { 
-        font-size: 18px !important; 
-    }
+    /* 3. Cỡ chữ trong các tab và nội dung bình thường */
     button[data-baseweb="tab"] p { 
-        font-size: 19px !important; 
+        font-size: 16px !important; 
         font-weight: bold !important; 
     }
     </style>
