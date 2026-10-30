@@ -2,7 +2,7 @@ import streamlit as st
 
 # 1. CẤU HÌNH TRANG WEB
 st.set_page_config(
-    page_title="Kho học liệu Hát Then - Đàn Tính",
+    page_title="Không gian văn hóa số: hát then, đàn tính",
     page_icon="🌾",
     layout="wide"
 )
@@ -32,7 +32,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # 2. TIÊU ĐỀ CHÍNH
-st.title("🌾 KHO HỌC LIỆU HÁT THEN - ĐÀN TÍNH")
+st.title("🌾 Không gian văn hóa số: hát then, đàn tính")
 st.caption("Sản phẩm Chuyển đổi số bảo tồn và phát huy giá trị di sản văn hóa dân tộc")
 st.divider()
 
@@ -53,11 +53,10 @@ LINK_ANH_MAU = "https://via.placeholder.com/500x300.png?text=Hinh+Anh+Thuc+Te"
 # ==============================================================================
 with tab1:
     st.header("🎵 Nghệ thuật Hát Then - Đàn Tính")
-    tab_anh_1, tab_tay_1 = st.tabs(["🇬🇧 Bản Anh - Việt (English)", "🌾 Bản Tày - Việt"])
+    tab_anh_1, tab_tay_1 = st.tabs([" Bản Anh(English) - Việt", " Bản Tày - Việt"])
 
     with tab_anh_1:
-        st.subheader("🇬🇧 Nội dung Song ngữ Anh - Việt")
-        st.write("🎬 **5 Video:**")
+        st.subheader("Nội dung Song ngữ Anh - Việt")
         v1, v2 = st.columns(2)
         with v1:
             st.video(LINK_YOUTUBE_MAU)
@@ -92,11 +91,10 @@ with tab1:
 # ==============================================================================
 with tab2:
     st.header("🎙️ Trải nghiệm & Phỏng vấn Thực tế")
-    tab_anh_2, tab_tay_2 = st.tabs(["🇬🇧 Bản Anh - Việt (English)", "🌾 Bản Tày - Việt"])
+    tab_anh_2, tab_tay_2 = st.tabs(["Bản Anh(English) - Việt", "🌾 Bản Tày - Việt"])
 
     with tab_anh_2:
-        st.subheader("🇬🇧 Nội dung Song ngữ Anh - Việt")
-        st.write("🎬 **5 Video:**")
+        st.subheader("Nội dung Song ngữ Anh - Việt")
         v1, v2 = st.columns(2)
         with v1:
             st.video("https://youtu.be/lUofhKpwe3w")
@@ -105,7 +103,6 @@ with tab2:
         with v2:
             st.video(LINK_YOUTUBE_MAU)
             st.video(LINK_YOUTUBE_MAU)
-        st.write("📸 **5 Hình ảnh:**")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
             with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
@@ -121,7 +118,6 @@ with tab2:
         with v2:
             st.video(LINK_YOUTUBE_MAU)
             st.video(LINK_YOUTUBE_MAU)
-        st.write("📸 **5 Hình ảnh:**")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
             with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
@@ -131,11 +127,10 @@ with tab2:
 # ==============================================================================
 with tab3:
     st.header("🪈 Nhạc cụ bổ trợ cho Hát Then - Đàn Tính")
-    tab_anh_3, tab_tay_3 = st.tabs(["🇬🇧 Bản Anh - Việt (English)", "🌾 Bản Tày - Việt"])
+    tab_anh_3, tab_tay_3 = st.tabs(["Bản Anh(English) - Việt", "Bản Tày - Việt"])
 
     with tab_anh_3:
-        st.subheader("🇬🇧 Nội dung Song ngữ Anh - Việt")
-        st.write("🎬 **5 Video:**")
+        st.subheader("Nội dung Song ngữ Anh - Việt")
         v1, v2 = st.columns(2)
         with v1:
             st.video(LINK_YOUTUBE_MAU)
@@ -144,14 +139,12 @@ with tab3:
         with v2:
             st.video(LINK_YOUTUBE_MAU)
             st.video(LINK_YOUTUBE_MAU)
-        st.write("📸 **5 Hình ảnh:**")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
             with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
 
     with tab_tay_3:
         st.subheader("🌾 Nội dung Tiếng Tày - Việt")
-        st.write("🎬 **5 Video:**")
         v1, v2 = st.columns(2)
         with v1:
             st.video(LINK_YOUTUBE_MAU)
@@ -160,7 +153,6 @@ with tab3:
         with v2:
             st.video(LINK_YOUTUBE_MAU)
             st.video(LINK_YOUTUBE_MAU)
-        st.write("📸 **5 Hình ảnh:**")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
             with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
