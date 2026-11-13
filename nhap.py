@@ -2,7 +2,7 @@ import streamlit as st
 
 # 1. CẤU HÌNH TRANG WEB
 st.set_page_config(
-    page_title="Không gian văn hóa số: hát then, đàn tính",
+    page_title="Kho học liệu hát then đàn tính",
     page_icon="🌾",
     layout="wide"
 )
@@ -36,11 +36,12 @@ st.caption("Sản phẩm Chuyển đổi số bảo tồn và phát huy giá tr�
 st.divider()
 
 # 3. TẠO 4 HỘP (TABS) LỚN
-tab1, tab2, tab3, tab_co = st.tabs([
-    "🎵 1. Nghệ thuật Hát Then - Đàn Tính",
-    "🎙️ 2. Trải nghiệm & Phỏng vấn",
-    "🪈 3. Nhạc cụ bổ trợ",
-    "📤 4. Dành riêng cho Cô giáo"
+tab1, tab2, tab3, tab_co, tab4 = st.tabs([
+    "🎵 Nghệ thuật Hát Then - Đàn Tính",
+    "🎙️ Trải nghiệm & Phỏng vấn",
+    "🪈 Nhạc cụ bổ trợ",
+    "📤 Dành riêng cho Cô giáo",
+    "Bản dịch Việt - Anh những bài hát then"
 ])
 
 # LINK MẪU (Sau này thay link thật vào đây)
@@ -173,3 +174,51 @@ with tab_co:
         st.video(link_co_nhap)
     else:
         st.info("👉 Hãy copy link YouTube rồi dán (Ctrl+V) vào ô trống phía trên.")
+
+with tab4:
+  st.header("Trang nội dung Tab 4")
+
+  # 1. Bốn khung văn bản (chia thành các đoạn hoặc dùng st.info/st.markdown để tạo khung)
+  st.markdown("### 📝 Các phần nội dung chính")
+
+  st.info(
+      "**Khung 1:** Giới thiệu tổng quan về vấn đề nghiên cứu hoặc mục tiêu của"
+      " đề tài."
+  )
+
+  st.success(
+      "**Khung 2:** Cơ sở lý luận và các phương pháp đã áp dụng trong quá"
+      " trình thực hiện."
+  )
+
+  st.warning(
+      "**Khung 3:** Kết quả đạt được và phân tích số liệu thực tế từ dự án."
+  )
+
+  st.error(
+      "**Khung 4:** Đề xuất giải pháp, hướng phát triển và kết luận của đề tài."
+  )
+
+  # 2. Thêm âm thanh (Audio) từ máy tính
+  st.markdown("### 🎵 Âm thanh thuyết minh / Audio dự án")
+  # Thay 'audio_1.mp3' bằng tên file nhạc/ghi âm của em đặt trong cùng thư mục dự án
+  audio_file = "audio_1.mp3"
+  try:
+    st.audio(audio_file, format="audio/mp3")
+  except:
+    st.warning(
+        "Chưa tìm thấy file audio. Hãy đảm bảo tên file đúng với thư mục"
+        " project!"
+    )
+
+  # 3. Hiển thị 3 ảnh (có thể dùng st.columns để xếp ngang 3 ảnh cho đẹp)
+  st.markdown("### 🖼️ Hình ảnh minh họa sản phẩm/hoạt động")
+  col1, col2, col3 = st.columns(3)
+
+  # Thay tên file ảnh 'anh1.jpg', 'anh2.jpg', 'anh3.jpg' bằng ảnh thực tế của em
+  with col1:
+    st.image("anh1.jpg", caption="Ảnh minh họa 1", use_container_width=True)
+  with col2:
+    st.image("anh2.jpg", caption="Ảnh minh họa 2", use_container_width=True)
+  with col3:
+    st.image("anh3.jpg", caption="Ảnh minh họa 3", use_container_width=True)
