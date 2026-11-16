@@ -59,8 +59,8 @@ with tab1:
         st.subheader("Nội dung Song ngữ Anh - Việt")
         v1, v2 = st.columns(2)
         with v1:
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
+            st.video("https://youtu.be/EUIonaSRYoQ")
+            st.video("https://youtu.be/PSyExFe-dEU")
             st.video(LINK_YOUTUBE_MAU)
         with v2:
             st.video(LINK_YOUTUBE_MAU)
@@ -200,9 +200,9 @@ with tab4:
   )
 
   # 2. Thêm âm thanh (Audio) từ máy tính
-  st.markdown("### 🎵 Âm thanh thuyết minh / Audio dự án")
+  st.markdown("audio1.mp3")
   # Thay 'audio_1.mp3' bằng tên file nhạc/ghi âm của em đặt trong cùng thư mục dự án
-  audio_file = "audio_1.mp3"
+  audio_file = "audio1.mp3"
   try:
     st.audio(audio_file, format="audio/mp3")
   except:
