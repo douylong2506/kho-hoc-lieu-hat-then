@@ -182,26 +182,19 @@ with tab4:
   st.markdown("### 📝 Các phần nội dung chính")
 
   st.info(
-      "Giới thiệu; https://vi.wikipedia.org/wiki/T%C3%ADnh_t%E1%BA%A9u."""
+      "Giới thiệu; https://vi.wikipedia.org/wiki/T%C3%ADnh_t%E1%BA%A9u."
           "Tính tẩu (hay tinh tẩu) (còn gọi là đàn Tính hay đàn Tẩu) (Hán-Việt: thiên cầm) là nhạc cụ của người Choang ở Trung Quốc , người Tày, người Nùng, người Thái ở Việt Nam và vài vùng thuộc Lào, Thái Lan người ta nhận thấy cũng có nhạc cụ này. Trong tiếng Tày, tính đọc chệch từ chữ thiên (天, tiān) có nghĩa là trời nhưng người Tày cố dịch từ đó là đàn, còn tẩu là bầu (quả bầu), dịch ra tiếng Việt, tính tẩu có nghĩa là đàn then. Để khỏi nhầm lẫn với loại đàn bầu của người miền xuôi, nhiều "
           "người gọi tính tẩu là đàn tính nhưng nếu dịch ra đàn bầu thì sai. Do đó chỉ cần hiểu đàn tính là cách gọi tắt của đàn tính tẩu."
           "Đối với dân tộc Choang ở Trung Quốc hay người Tày ở Việt Nam thì đàn tính là nhạc cụ chính dùng để độc tấu, đệm hát và chơi giai điệu múa. Khi đệm hát, đàn tính  thường chơi giai điệu của lời ca. Trong nhạc múa thiên cầm của dân tộc Choang có những bài bản riêng.")
 
   st.success(
-      "**Khung 2:** Cơ sở lý luận và các phương pháp đã áp dụng trong quá"
-      " trình thực hiện."
-  )
+      "Truyền thuyết:   Trong truyền thuyết lưu truyền của dân tộc Tày, sự tích kể về nguồn gốc ra đời cây đàn tính rằng, xưa kia có một chàng trai nghèo không lấy được vợ, thời gian trôi qua, bỗng một hôm ra suối chàng nhìn xuống nước thấy khuôn mặt mình đã trở nên già nua. Buồn phiền với thân phận của mình, chàng ao ước có được một cây đàn để tâm giao những lúc cô đơn. Sau đó, chàng lên trời xin ban cho hạt quả bầu, cho giống cây dâu để nuôi tằm. Khi đã có quả bầu nậm, có tơ tằm, chàng trai đã chế tác ra cây đàn tính. Cây đàn này có 12 dây nhưng mỗi khi chàng gẩy đàn thì những tâm sự u buồn của chàng đã hóa vào âm thanh của tiếng đàn. Sự u buồn khiến cho người và vật nghe thấy mà nao lòng chẳng buồn ăn. Cỏ cây nghe tiếng đàn cũng buồn mà héo úa. Bụt thấy thế vô cùng lo lắng nếu như chàng trai cứ đàn như vậy thì vạn vật sẽ chết hết. Bởi thế, Bụt bắt người chế tác ra cây đàn này phải bỏ bớt đi 9 dây, chỉ còn 3 dây như cây đàn tính bây giờ nên những âm thanh sầu não cũng không còn nữa mà chỉ còn những âm rộn ràng, tươi vui, trầm bổng.(https://baocaobang.vn/Truyen-thuyet-ve-dan-tinh-tau-17867.html)")
 
   st.warning(
-      "**Khung 3:** Kết quả đạt được và phân tích số liệu thực tế từ dự án."
-  )
-
-  st.error(
-      "**Khung 4:** Đề xuất giải pháp, hướng phát triển và kết luận của đề tài."
-  )
+      "Cấu tạo: https://vi.wikipedia.org/wiki/T%C3%ADnh_t%E1%BA%A9u·    Bầu vang (bộ phận tăng âm): làm bằng nửa quả bầu khô (cắt ngang). Kích cỡ bầu vang có thể thay đổi tùy theo quả bầu lớn nhỏ, song đường kính thường tư 15 đến 25 cm. Để có độ vang, âm sắc chuẩn người ta thường chọn quả bầu tròn và dày đều để làm bầu vang. Mặt đàn thường làm bằng gỗ cây ngô đồng xẻ mỏng khoảng 3mm. Trên mặt đàn có khoét 2 lỗ hình hoa thị để thoát âm (trước kia 2 lỗ hoa thị được khoét ở phía sau bầu đàn). Ngựa đàn tương đối nhỏ nằm trên mặt đàn. Cần đàn: bằng gỗ, thường là gỗ dâu hay gỗ thừng mục, nhẹ và thẳng. Cần đàn dài khoảng 9 nắm tay của người chơi đàn. Theo kinh nghiệm dân gian, số đo cỡ nào thì hợp với cỡ giọng hát của người có số đo ấy. Phần dưới của cần đàn xuyên qua bầu vang, còn phần trên cùng là đầu đàn uốn cong hình lưỡi liềm hoặc đầu rồng, đầu phượng … Mặt cần đàn trơn, không có phím như đàn tam. Hốc luồn dây có 2 hoặc 3 trục dây.")
 
   # 2. Thêm âm thanh (Audio) từ máy tính
-  st.markdown("audio1.mp3")
+  st.markdown("tailieu/audio1.mp3")
   # Thay 'audio_1.mp3' bằng tên file nhạc/ghi âm của em đặt trong cùng thư mục dự án
   audio_file = "audio1.mp3"
   try:
