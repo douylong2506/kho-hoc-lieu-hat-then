@@ -61,7 +61,7 @@ with tab1:
         with v1:
             st.video("https://youtu.be/EUIonaSRYoQ")
             st.video("https://youtu.be/PSyExFe-dEU")
-            st.video(LINK_YOUTUBE_MAU)
+            st.video("https://www.youtube.com/watch?v=OXXoI2MF-Gs")
         with v2:
             st.video(LINK_YOUTUBE_MAU)
             st.video(LINK_YOUTUBE_MAU)
