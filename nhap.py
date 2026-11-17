@@ -181,9 +181,10 @@ with tab4:
   # 1. Bốn khung văn bản (chia thành các đoạn hoặc dùng st.info/st.markdown để tạo khung)
   st.markdown("### 📝 Các phần nội dung chính")
 
-  st.info("**Khung 1:**Giới thiệu; https://vi.wikipedia.org/wiki/T%C3%ADnh_t%E1%BA%A9u.<br>"
+  st.info(
+      "Giới thiệu; https://vi.wikipedia.org/wiki/T%C3%ADnh_t%E1%BA%A9u."""
           "Tính tẩu (hay tinh tẩu) (còn gọi là đàn Tính hay đàn Tẩu) (Hán-Việt: thiên cầm) là nhạc cụ của người Choang ở Trung Quốc , người Tày, người Nùng, người Thái ở Việt Nam và vài vùng thuộc Lào, Thái Lan người ta nhận thấy cũng có nhạc cụ này. Trong tiếng Tày, tính đọc chệch từ chữ thiên (天, tiān) có nghĩa là trời nhưng người Tày cố dịch từ đó là đàn, còn tẩu là bầu (quả bầu), dịch ra tiếng Việt, tính tẩu có nghĩa là đàn then. Để khỏi nhầm lẫn với loại đàn bầu của người miền xuôi, nhiều "
-          "người gọi tính tẩu là đàn tính nhưng nếu dịch ra đàn bầu thì sai. Do đó chỉ cần hiểu đàn tính là cách gọi tắt của đàn tính tẩu.<br>"
+          "người gọi tính tẩu là đàn tính nhưng nếu dịch ra đàn bầu thì sai. Do đó chỉ cần hiểu đàn tính là cách gọi tắt của đàn tính tẩu."
           "Đối với dân tộc Choang ở Trung Quốc hay người Tày ở Việt Nam thì đàn tính là nhạc cụ chính dùng để độc tấu, đệm hát và chơi giai điệu múa. Khi đệm hát, đàn tính  thường chơi giai điệu của lời ca. Trong nhạc múa thiên cầm của dân tộc Choang có những bài bản riêng.")
 
   st.success(
