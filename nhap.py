@@ -217,8 +217,20 @@ with tab4:
 
   # Thay tên file ảnh 'anh1.jpg', 'anh2.jpg', 'anh3.jpg' bằng ảnh thực tế của em
   with col1:
-    st.image("anh1.jpg", caption="Ảnh minh họa 1", use_container_width=True)
+      st.image(
+          "https://via.placeholder.com/500x300.png?text=Anh+1",
+          caption="Ảnh minh họa 1",
+          use_container_width=True,
+      )
   with col2:
-    st.image("anh2.jpg", caption="Ảnh minh họa 2", use_container_width=True)
+      st.image(
+          "https://via.placeholder.com/500x300.png?text=Anh+1",
+          caption="Ảnh minh họa 2",
+          use_container_width=True,
+      )
   with col3:
-    st.image("anh3.jpg", caption="Ảnh minh họa 3", use_container_width=True)
+      st.image(
+          "https://via.placeholder.com/500x300.png?text=Anh+1",
+          caption="Ảnh minh họa 3",
+          use_container_width=True,
+      )
