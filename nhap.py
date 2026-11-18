@@ -2,7 +2,7 @@ import streamlit as st
 
 # 1. CẤU HÌNH TRANG WEB
 st.set_page_config(
-    page_title="Kho học liệu hát then đàn tính",
+    page_title="Không gian văn hóa số hát then đàn tính",
     page_icon="🌾",
     layout="wide"
 )
@@ -31,7 +31,7 @@ st.markdown("""
     """, unsafe_allow_html=True)
 
 # 2. TIÊU ĐỀ CHÍNH
-st.title("🌾 Không gian văn hóa số: hát then, đàn tính")
+st.title("🌾 Không gian văn hóa số hát then đàn tính")
 st.caption("Sản phẩm Chuyển đổi số bảo tồn và phát huy giá trị di sản văn hóa dân tộc")
 st.divider()
 
