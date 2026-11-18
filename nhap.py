@@ -57,11 +57,14 @@ with tab1:
 
     with tab_anh_1:
         st.subheader("Nội dung Song ngữ Anh - Việt")
-        v1, v2 = st.columns(1)
+        v1, v2 = st.columns(2)
         with v1:
             st.video("https://youtu.be/EUIonaSRYoQ")
             st.video("https://youtu.be/PSyExFe-dEU")
             st.video("https://youtu.be/0D8OQoj4IEM")
+        with v2:
+            st.video(LINK_YOUTUBE_MAU)
+            st.video(LINK_YOUTUBE_MAU)
         st.write("📸 **5 Hình ảnh:**")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
@@ -93,7 +96,7 @@ with tab2:
 
     with tab_anh_2:
         st.subheader("Nội dung Song ngữ Anh - Việt")
-        v1 = st.columns(2)
+        v1, v2 = st.columns(2)
         with v1:
             st.video("https://youtu.be/lUofhKpwe3w")
             st.video("https://youtu.be/5a7uMVPboKs")
