@@ -40,7 +40,7 @@ tab1, tab2, tab3, tab4 = st.tabs([
     "🎵 Nghệ thuật Hát Then - Đàn Tính",
     "🎙️ Trải nghiệm & Phỏng vấn",
     "🪈 Nhạc cụ bổ trợ",
-    "Bản dịch Việt - Anh những bài hát then"
+    "Giới thiệu Hát Then đàn tính"
 ])
 
 # LINK MẪU (Sau này thay link thật vào đây)
@@ -125,7 +125,7 @@ with tab3:
     st.image("bt5.png", caption="Ảnh nhạc cụ bổ trợ", use_container_width=True)
 
 with tab4:
-  st.header("Trang nội dung Tab 4")
+  st.header("Giới thiệu về hát then đàn tính")
 
   # 1. Bốn khung văn bản (chia thành các đoạn hoặc dùng st.info/st.markdown để tạo khung)
   st.markdown("### 📝 Các phần nội dung chính")
