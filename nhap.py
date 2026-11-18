@@ -68,7 +68,8 @@ with tab1:
         st.write("📸 **5 Hình ảnh:**")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
-            with c: st.image(f"tailieu/ng{i}.jpg", caption=f"Ảnh {i}", use_container_width=True)
+            with c:
+                st.image(f"ng{i}.jpg", caption=f"Ảnh {i}", use_container_width=True)
 
     with tab_tay_1:
         st.subheader("🌾 Nội dung Tiếng Tày - Việt")
