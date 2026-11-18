@@ -91,17 +91,13 @@ with tab2:
 
     with tab_anh_2:
         st.subheader("Nội dung Song ngữ Anh - Việt")
-        v1, v2 = st.columns(2)
-        with v1:
-            st.video("https://youtu.be/lUofhKpwe3w")
-            st.video("https://youtu.be/5a7uMVPboKs")
-            st.video(LINK_YOUTUBE_MAU)
-        with v2:
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
+        st.video("https://youtu.be/lUofhKpwe3w")
+        st.video("https://youtu.be/5a7uMVPboKs")
+        st.video("https://youtu.be/Z6x8P5QEPTM")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
-            with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
+            with c:
+                st.image(f"tn{i}.jpg", caption=f"Ảnh {i}", use_container_width=True)
 
     with tab_tay_2:
         st.subheader("🌾 Nội dung Tiếng Tày - Việt")
@@ -123,53 +119,12 @@ with tab2:
 # ==============================================================================
 with tab3:
     st.header("🪈 Nhạc cụ bổ trợ cho Hát Then - Đàn Tính")
-    tab_anh_3, tab_tay_3 = st.tabs(["Bản Anh(English) - Việt", "Bản Tày - Việt"])
-
-    with tab_anh_3:
-        st.subheader("Nội dung Song ngữ Anh - Việt")
-        v1, v2 = st.columns(2)
-        with v1:
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
-        with v2:
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
-        cols = st.columns(5)
-        for i, c in enumerate(cols, 1):
-            with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
-
-    with tab_tay_3:
-        st.subheader("🌾 Nội dung Tiếng Tày - Việt")
-        v1, v2 = st.columns(2)
-        with v1:
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
-        with v2:
-            st.video(LINK_YOUTUBE_MAU)
-            st.video(LINK_YOUTUBE_MAU)
-        cols = st.columns(5)
-        for i, c in enumerate(cols, 1):
-            with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
-
-# ==============================================================================
-# HỘP 4: GÓC DÀNH RIÊNG CHO CÔ GIÁO
-# ==============================================================================
-with tab_co:
-    st.header("📤 Dành riêng cho Cô giáo bổ sung tư liệu")
-    st.write("Cô giáo có thể dán trực tiếp link YouTube vào ô dưới đây để xem video trực tiếp trên ứng dụng:")
-
-    link_co_nhap = st.text_input(
-        "📌 Dán đường link YouTube vào đây:",
-        placeholder="https://www.youtube.com/watch?v=..."
-    )
-
-    if link_co_nhap:
-        st.success("✅ Đã nhận link! Video hiển thị bên dưới:")
-        st.video(link_co_nhap)
-    else:
-        st.info("👉 Hãy copy link YouTube rồi dán (Ctrl+V) vào ô trống phía trên.")
+    st.subheader("Nội dung Song ngữ Anh - Việt")
+    st.video("https://youtu.be/YaoDuFnTVFY")
+    st.video("https://youtu.be/D6uQLrZsH9s")
+    cols = st.columns(5)
+    for i, c in enumerate(cols, 1):
+        with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
 
 with tab4:
   st.header("Trang nội dung Tab 4")
@@ -194,24 +149,18 @@ with tab4:
 
   # 3. Hiển thị 3 ảnh (có thể dùng st.columns để xếp ngang 3 ảnh cho đẹp)
   st.markdown("### 🖼️ Hình ảnh minh họa sản phẩm/hoạt động")
-  col1, col2, col3 = st.columns(3)
+  col1, col2 = st.columns(2)
 
   # Thay tên file ảnh 'anh1.jpg', 'anh2.jpg', 'anh3.jpg' bằng ảnh thực tế của em
   with col1:
       st.image(
-          "https://via.placeholder.com/500x300.png?text=Anh+1",
+          "ng4",
           caption="Ảnh minh họa 1",
           use_container_width=True,
       )
   with col2:
       st.image(
-          "https://via.placeholder.com/500x300.png?text=Anh+1",
+          "tn3",
           caption="Ảnh minh họa 2",
-          use_container_width=True,
-      )
-  with col3:
-      st.image(
-          "https://via.placeholder.com/500x300.png?text=Anh+1",
-          caption="Ảnh minh họa 3",
           use_container_width=True,
       )
