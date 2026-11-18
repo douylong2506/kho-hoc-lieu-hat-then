@@ -61,14 +61,14 @@ with tab1:
         with v1:
             st.video("https://youtu.be/EUIonaSRYoQ")
             st.video("https://youtu.be/PSyExFe-dEU")
-            st.video("https://www.youtube.com/watch?v=OXXoI2MF-Gs")
+            st.video("https://youtu.be/0D8OQoj4IEM")
         with v2:
             st.video(LINK_YOUTUBE_MAU)
             st.video(LINK_YOUTUBE_MAU)
         st.write("📸 **5 Hình ảnh:**")
         cols = st.columns(5)
         for i, c in enumerate(cols, 1):
-            with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
+            with c: st.image(f"tailieu/ng{i}.jpg", caption=f"Ảnh {i}", use_container_width=True)
 
     with tab_tay_1:
         st.subheader("🌾 Nội dung Tiếng Tày - Việt")
@@ -98,7 +98,7 @@ with tab2:
         v1, v2 = st.columns(2)
         with v1:
             st.video("https://youtu.be/lUofhKpwe3w")
-            st.video(LINK_YOUTUBE_MAU)
+            st.video("https://youtu.be/5a7uMVPboKs")
             st.video(LINK_YOUTUBE_MAU)
         with v2:
             st.video(LINK_YOUTUBE_MAU)
@@ -194,16 +194,7 @@ with tab4:
       "Cấu tạo: https://vi.wikipedia.org/wiki/T%C3%ADnh_t%E1%BA%A9u·    Bầu vang (bộ phận tăng âm): làm bằng nửa quả bầu khô (cắt ngang). Kích cỡ bầu vang có thể thay đổi tùy theo quả bầu lớn nhỏ, song đường kính thường tư 15 đến 25 cm. Để có độ vang, âm sắc chuẩn người ta thường chọn quả bầu tròn và dày đều để làm bầu vang. Mặt đàn thường làm bằng gỗ cây ngô đồng xẻ mỏng khoảng 3mm. Trên mặt đàn có khoét 2 lỗ hình hoa thị để thoát âm (trước kia 2 lỗ hoa thị được khoét ở phía sau bầu đàn). Ngựa đàn tương đối nhỏ nằm trên mặt đàn. Cần đàn: bằng gỗ, thường là gỗ dâu hay gỗ thừng mục, nhẹ và thẳng. Cần đàn dài khoảng 9 nắm tay của người chơi đàn. Theo kinh nghiệm dân gian, số đo cỡ nào thì hợp với cỡ giọng hát của người có số đo ấy. Phần dưới của cần đàn xuyên qua bầu vang, còn phần trên cùng là đầu đàn uốn cong hình lưỡi liềm hoặc đầu rồng, đầu phượng … Mặt cần đàn trơn, không có phím như đàn tam. Hốc luồn dây có 2 hoặc 3 trục dây.")
 
   # 2. Thêm âm thanh (Audio) từ máy tính
-  st.markdown("tailieu/audio1.mp3")
-  # Thay 'audio_1.mp3' bằng tên file nhạc/ghi âm của em đặt trong cùng thư mục dự án
-  audio_file = "audio1.mp3"
-  try:
-    st.audio(audio_file, format="audio/mp3")
-  except:
-    st.warning(
-        "Chưa tìm thấy file audio. Hãy đảm bảo tên file đúng với thư mục"
-        " project!"
-    )
+
 
   # 3. Hiển thị 3 ảnh (có thể dùng st.columns để xếp ngang 3 ảnh cho đẹp)
   st.markdown("### 🖼️ Hình ảnh minh họa sản phẩm/hoạt động")
