@@ -118,13 +118,12 @@ with tab2:
 # HỘP 3: NHẠC CỤ BỔ TRỢ
 # ==============================================================================
 with tab3:
-    st.header("🪈 Nhạc cụ bổ trợ cho Hát Then - Đàn Tính")
-    st.subheader("Nội dung Song ngữ Anh - Việt")
+    st.header("🪄 Nhạc cụ bổ trợ cho Hát Then - Đàn Tính")
     st.video("https://youtu.be/YaoDuFnTVFY")
     st.video("https://youtu.be/D6uQLrZsH9s")
-    cols = st.columns(5)
-    for i, c in enumerate(cols, 1):
-        with c: st.image(LINK_ANH_MAU, caption=f"Ảnh {i}")
+
+    # Hiển thị 1 ảnh duy nhất
+    st.image("bt5.png", caption="Ảnh nhạc cụ bổ trợ", use_container_width=True)
 
 with tab4:
   st.header("Trang nội dung Tab 4")
