@@ -36,11 +36,10 @@ st.caption("Sản phẩm Chuyển đổi số bảo tồn và phát huy giá tr�
 st.divider()
 
 # 3. TẠO 4 HỘP (TABS) LỚN
-tab1, tab2, tab3, tab_co, tab4 = st.tabs([
+tab1, tab2, tab3, tab4 = st.tabs([
     "🎵 Nghệ thuật Hát Then - Đàn Tính",
     "🎙️ Trải nghiệm & Phỏng vấn",
     "🪈 Nhạc cụ bổ trợ",
-    "📤 Dành riêng cho Cô giáo",
     "Bản dịch Việt - Anh những bài hát then"
 ])
 
