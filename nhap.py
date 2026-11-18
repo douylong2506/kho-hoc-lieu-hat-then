@@ -154,13 +154,13 @@ with tab4:
   # Thay tên file ảnh 'anh1.jpg', 'anh2.jpg', 'anh3.jpg' bằng ảnh thực tế của em
   with col1:
       st.image(
-          "ng4",
+          "ng4.jpg",
           caption="Ảnh minh họa 1",
           use_container_width=True,
       )
   with col2:
       st.image(
-          "tn3",
+          "tn3.jpg",
           caption="Ảnh minh họa 2",
           use_container_width=True,
       )
